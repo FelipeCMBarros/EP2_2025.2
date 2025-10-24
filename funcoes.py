@@ -26,7 +26,7 @@ def faz_jogada(tabuleiro, linha, coluna):
         tabuleiro[linha][coluna] = '-'
     return tabuleiro
 
-def posciona_frota(frota):
+def posiciona_frota(frota):
     tabuleiro = []
     i = 0
     while i<10:
