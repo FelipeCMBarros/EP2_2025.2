@@ -66,7 +66,7 @@ def posiciona_frota(frota):
 # Função afundados que recebe como argumentos um dicionário com as informações das embarcações e o tabuleiro com o estado atual da partida. A função retorna um número representando a quantidade de navios já afundados
 
 def afundados(frota, tabuleiro):
-    afundados = 0
+    navios_afundados = 0
     for tipo in frota:
         lista_navios = frota[tipo]
         i = 0
@@ -82,9 +82,9 @@ def afundados(frota, tabuleiro):
                     afundado = False
                 j += 1
             if afundado:
-                afundados += 1
+                navios_afundados += 1
             i += 1
-    return afundados
+    return navios_afundados
 
 # Função chamada posicao_valida que recebe como argumentos um dicionário com as informações dos navios, a linha e a coluna em que o jogador deseja posicionar um navio, a orientacao e o tamanho do navio. A função retorna True se as posições do navio a ser posicionado ocuparem somente posições vazias ou posições válidas. Caso contrário, a função deve retornar False.
 
