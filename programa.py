@@ -1,12 +1,5 @@
 # Importando todas as funções
-from funcoes import define_posicoes
-from funcoes import preenche_frota
-from funcoes import faz_jogada
-from funcoes import posiciona_frota
-from funcoes import afundados
-from funcoes import posicao_valida
-from funcoes import monta_tabuleiros
-
+from funcoes import *
 
 frota = {
     "porta-aviões": [],
