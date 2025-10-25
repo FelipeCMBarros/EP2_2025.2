@@ -74,7 +74,6 @@ posicoes_jogadas = []
 
 # Loop principal do jogo
 jogando = True
-
 while jogando:
     print(monta_tabuleiros(tabuleiro_jogador, tabuleiro_oponente))
 
@@ -105,10 +104,7 @@ while jogando:
     tabuleiro_oponente = faz_jogada(tabuleiro_oponente, linha, coluna)
 
     # Verifica se afundou todos os navios do oponente
-    total_afundados = float(afundados(frota_oponente, tabuleiro_oponente))
-
-    if total_afundados == 10: # quebra o loop
+    total_afundados = afundados(frota_oponente, tabuleiro_oponente)
+    if total_afundados == 10:  
         print("Parabéns! Você derrubou todos os navios do seu oponente!")
         jogando = False
-
-    
